@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true">
+        <bitmap android:src="@mipmap/ic_sentiment_satisfied_black_48dp"/>
+    </item>
+
+    <item android:state_checked="false">
+        <bitmap android:src="@mipmap/ic_sentiment_very_dissatisfied_black_48dp"/>
+    </item>
+
+</selector>
