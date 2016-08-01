@@ -9,11 +9,7 @@ import android.view.ViewGroup;
 
 import cl.cutiko.shrinkquizz.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link LuckyFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class LuckyFragment extends Fragment {
 
     public LuckyFragment() {
