@@ -19,7 +19,7 @@ public class CoolResult extends CoolAnswers {
     }
 
     private String partyDetails() {
-        return (isParty()) ? "a todos les encanta salir contigo, " : "deberías empezar a salir más, ";
+        return (isParty()) ? "A todos les encanta salir contigo, " : "Deberías empezar a salir más, ";
     }
 
     private String drinkDetails() {
