@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShrinkQuizz</string>
+    <string name="cool_fragment">Cool</string>
+    <string name="lucky_fragment">Suerte</string>
+    <string name="match_fragment">Compatibles</string>
+    <string name="name_format">Gracias por participar %1$s:\n</string>
+</resources>
