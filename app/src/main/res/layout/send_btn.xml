@@ -6,4 +6,5 @@
     android:background="@drawable/bg_primary"
     android:padding="14dp"
     android:text="RESULTADOS"
+    android:layout_alignParentBottom="true"
     android:textColor="@android:color/white" />

@@ -20,10 +20,6 @@
         android:layout_below="@id/happyCb"
         android:layout_centerHorizontal="true" />
 
-    <include
-        layout="@layout/send_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true" />
+    <include layout="@layout/send_btn" />
 
 </RelativeLayout>
