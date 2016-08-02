@@ -4,19 +4,19 @@
     android:layout_height="match_parent"
     tools:context="cl.cutiko.shrinkquizz.views.lucky.LuckyFragment">
 
-    <TextView
-        android:gravity="center"
-        android:layout_above="@+id/happyCb"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="¿Estas feliz? (presione para cambiar)" />
-
     <CheckBox
-        android:textAlignment="viewStart"
+        android:layout_marginTop="150dp"
+        android:text="¿Estas feliz?"
         android:id="@+id/happyCb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:button="@drawable/bg_cb" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"/>
+
+    <include
+        layout="@layout/send_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/happyCb" />
 
 </RelativeLayout>

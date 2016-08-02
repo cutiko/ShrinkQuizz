@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Tu nombre">
+
         <EditText
             android:id="@+id/userName"
             android:layout_width="match_parent"
@@ -26,20 +27,21 @@
 
     <TextView
         android:id="@+id/drinksTv"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:text="0"
-        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="0" />
 
     <SeekBar
-        android:progress="0"
-        android:max="10"
         android:id="@+id/drinksSb"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="0"
+        android:layout_marginBottom="40dp"/>
 
-    <include layout="@layout/send_btn"/>
+    <include layout="@layout/send_btn" />
 
 </LinearLayout>
