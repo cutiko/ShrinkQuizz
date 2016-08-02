@@ -1,7 +1,6 @@
 package cl.cutiko.shrinkquizz.views.cool;
 
 
-import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -10,7 +9,6 @@ import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
@@ -27,7 +25,6 @@ public class CoolFragment extends Fragment {
     private TextView counterTv;
     private Switch partySw;
     private SeekBar drinksBar;
-    private Button sendBtn;
 
     public CoolFragment() {
         // Required empty public constructor
@@ -46,9 +43,9 @@ public class CoolFragment extends Fragment {
         partySw = (Switch) main.findViewById(R.id.partySw);
         counterTv = (TextView) main.findViewById(R.id.drinksTv);
         drinksBar = (SeekBar) main.findViewById(R.id.drinksSb);
-        sendBtn = (Button) main.findViewById(R.id.sendBtn);
+        Button sendBtn = (Button) main.findViewById(R.id.sendBtn);
         setSeekBar();
-        setSendBtn();
+        setSendBtn(sendBtn);
         return main;
     }
 
@@ -71,7 +68,7 @@ public class CoolFragment extends Fragment {
         });
     }
 
-    private void setSendBtn(){
+    private void setSendBtn(Button sendBtn){
         sendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
