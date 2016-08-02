@@ -11,12 +11,15 @@ import android.view.View;
 
 import cl.cutiko.shrinkquizz.R;
 import cl.cutiko.shrinkquizz.adapter.SectionsPagerAdapter;
+import com.crashlytics.android.Crashlytics;
+import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
