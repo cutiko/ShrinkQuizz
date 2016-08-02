@@ -2,21 +2,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="50dp"
     tools:context="cl.cutiko.shrinkquizz.views.lucky.LuckyFragment">
 
     <CheckBox
-        android:layout_marginTop="150dp"
-        android:text="¿Estas feliz?"
         android:id="@+id/happyCb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="150dp"/>
+        android:layout_centerInParent="true"
+        android:text="¿Estas feliz?" />
+
+    <CheckBox
+        android:button="@drawable/bg_happy_cb"
+        android:id="@+id/previewCb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/happyCb"
+        android:layout_centerHorizontal="true" />
 
     <include
         layout="@layout/send_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/happyCb" />
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>

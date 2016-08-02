@@ -3,45 +3,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="@dimen/activity_horizontal_margin"
     tools:context="cl.cutiko.shrinkquizz.views.cool.CoolFragment">
 
-    <android.support.design.widget.TextInputLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Tu nombre">
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
 
-        <EditText
-            android:id="@+id/userName"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </android.support.design.widget.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:hint="Tu nombre">
 
-    <Switch
-        android:id="@+id/partySw"
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Switch
+            android:id="@+id/partySw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="¿Carreteas todos los fin de semana?" />
+
+        <TextView
+            android:id="@+id/drinksTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="0" />
+
+        <SeekBar
+            android:id="@+id/drinksSb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:max="10"
+            android:progress="0" />
+
+    </LinearLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp"
-        android:text="¿Carreteas todos los fin de semana?" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="50dp">
 
-    <TextView
-        android:id="@+id/drinksTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp"
-        android:text="0" />
+        <include
+            layout="@layout/send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
 
-    <SeekBar
-        android:id="@+id/drinksSb"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:max="10"
-        android:progress="0"
-        android:layout_marginBottom="40dp"/>
-
-    <include layout="@layout/send_btn" />
+    </RelativeLayout>
 
 </LinearLayout>
