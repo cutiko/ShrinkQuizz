@@ -9,4 +9,11 @@
     <string name="second_quarter">Abril-Junio</string>
     <string name="third_quarter">Julio-Septiembre</string>
     <string name="fourth_quarter">Octubre-Noviembre</string>
+
+    <string-array name="quarters">
+        <item>@string/firs_quarter</item>
+        <item>@string/second_quarter</item>
+        <item>@string/third_quarter</item>
+        <item>@string/fourth_quarter</item>
+    </string-array>
 </resources>
