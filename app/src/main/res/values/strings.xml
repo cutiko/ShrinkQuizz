@@ -4,4 +4,9 @@
     <string name="lucky_fragment">Suerte</string>
     <string name="match_fragment">Compatibles</string>
     <string name="name_format">Gracias por participar %1$s:\n</string>
+
+    <string name="firs_quarter">Enero-Marzo</string>
+    <string name="second_quarter">Abril-Junio</string>
+    <string name="third_quarter">Julio-Septiembre</string>
+    <string name="fourth_quarter">Octubre-Noviembre</string>
 </resources>
