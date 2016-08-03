@@ -17,7 +17,6 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import cl.cutiko.shrinkquizz.R;
-import cl.cutiko.shrinkquizz.data.LuckyResult;
 import cl.cutiko.shrinkquizz.data.MatchResult;
 
 public class MatchFragment extends Fragment {

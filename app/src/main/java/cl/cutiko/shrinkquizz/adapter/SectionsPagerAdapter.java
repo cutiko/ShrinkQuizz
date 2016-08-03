@@ -6,7 +6,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import cl.cutiko.shrinkquizz.R;
-import cl.cutiko.shrinkquizz.views.MainActivity;
 import cl.cutiko.shrinkquizz.views.cool.CoolFragment;
 import cl.cutiko.shrinkquizz.views.lucky.LuckyFragment;
 import cl.cutiko.shrinkquizz.views.match.MatchFragment;

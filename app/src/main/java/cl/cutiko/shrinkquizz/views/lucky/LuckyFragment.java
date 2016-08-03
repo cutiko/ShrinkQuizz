@@ -14,7 +14,6 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
 import cl.cutiko.shrinkquizz.R;
-import cl.cutiko.shrinkquizz.data.CoolResult;
 import cl.cutiko.shrinkquizz.data.LuckyResult;
 
 
